@@ -1,3 +1,14 @@
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.container-for-projects {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
 .main-proj{
     position: fixed;
     top: 0;
@@ -102,9 +113,6 @@ audio{
 
 /*kot*/
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
 }
 .container_cat{
@@ -232,4 +240,111 @@ body{
     top: 46px;
     left: 46px;
     transform: rotate(333deg);
+}
+
+/*Triangle styles*/
+
+.proj-container{
+    padding: 0 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.triangle-container input{
+    display: block;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    width: 230px;
+    padding: 5px 0;
+    padding-left: 5px;
+}
+
+.triangle-container {
+    padding-bottom: 50px;
+}
+
+
+/* Menu styles */
+
+.main-menu-task-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+}
+
+.main-menu-task-container div {
+    padding: 10px;
+}
+
+.main-menu-task-container .aside-bar {
+    background-color: rgb(235, 235, 235);
+    min-height: 300px;
+}
+
+.main-menu-task-container .aside-bar ul li{
+    background-color: rgb(235, 235, 235);
+}
+
+.main-menu-task-container .aside-bar ul li{
+    background-color: rgb(196, 196, 196);
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.main-menu-task-container .aside-bar ul li:hover {
+    opacity: 0.6;
+}
+
+.main-menu-task-container .menu-input-cont {
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-menu-task-container .menu-input-cont input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    background-color: rgb(196, 196, 196);
+    outline: none;
+    text-indent: 10px;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.main-menu-task-container .menu-input-cont button {
+    border: none;
+    background-color: rgb(170, 170, 170);
+    height: 35px;
+    padding: 0 35px;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.main-menu-task-container .menu-input-cont button:hover {
+    opacity: 0.8;
+}
+
+.main-menu-task-container .menu-input-cont input:focus-visible {
+    border: none;
+}
+
+.top-header-menu {
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+    padding: 30px 0;
+    margin-bottom: 20px;
+}
+
+.top-header-menu ul{
+    padding: 0;
+    margin: 0;
+}
+
+.top-header-menu ul li {
+    display: inline-block;
+    margin-right: 5px;
 }
